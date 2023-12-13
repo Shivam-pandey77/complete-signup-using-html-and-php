@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    
+    <form action="http://localhost/internship/full%20working/login.php" method="post">
+        <div class="container">
+            <div class="box">
+                <h2>
+                    Login Form
+                </h2>
+
+                <div>
+                    <label class="name">E-mail</label><br>
+                    <input type="email" placeholder="Enter Your E-mail" name="email" required>
+                </div>
+                
+                <div>
+                    <label class="name">Date of birth</label><br>
+                    <input type="date" id="date" name="dob" required>
+                </div>
+
+                <div>
+                    <label class="name">Password</label><br>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" id="button" onclick="add()">Login</button>
+                </div>
+
+                <div>
+                    <p>Dont have a account ? &nbsp; <a href="sign.html">Register</a></p>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

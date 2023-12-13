@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kaushan+Script&family=Merriweather&family=Quicksand&family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Merriweather&family=Quicksand&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url("https://bit.ly/44VaKoy") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 2px solid rgba(255, 255, 255, 0.415);
+    border-radius: 25px;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+
+.box h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 34px;
+    font-weight: 400;
+    font-family: 'Quicksand',cursive;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    margin: 0 80px;
+    margin-bottom: 20px;
+}
+
+.box div{
+    padding: 0 10px ;
+}
+
+.box div label{
+    color: rgba(255, 255, 255, 0.986);
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box div input {
+    margin: 10px 0;
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 13px;
+    padding: 5px 13px;
+    outline: none;
+}
+
+.btn {
+    margin: 30px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    width: 80%;
+    height: 37px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Quicksand";
+    font-size: 18px;
+    font-weight: bold;
+    background-image: linear-gradient(140deg, rgba(3, 144, 209, 0.65), rgba(105, 179, 211, 0.8), white);
+}
+
+.btn button:hover {
+    background-image: linear-gradient(140deg, rgba(3, 144, 209, 0.8), white, rgba(105, 179, 211, 0.8));
+    cursor: pointer;
+}
+
+.box div p{
+    text-align: center;
+    color: white;
+    font-family: "Quicksand",cursive;
+    margin-bottom: 20px;
+}
+.box div p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Quicksand",cursive;
+}
+
+.box div p a:hover {
+    text-decoration: underline;
+    font-family: "ink free",cursive;
+    font-weight: 400;
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .box h2{
+        margin: 0 40px;
+        margin-bottom: 20px;
+    }
+    .box div input,#gender {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .box h2{
+        margin: 0 20px;
+        margin-bottom: 20px;   
+     }
+    .box div input,#gender {
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .box h2{
+        margin: 0 10px;
+        margin-bottom: 20px;   
+     }
+    .box div input,#gender {
+        width: 200px;
+    }
+}

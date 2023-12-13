@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kaushan+Script&family=Merriweather&family=Quicksand&family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Merriweather&family=Quicksand&family=Roboto:ital,wght@0,300;1,100&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.full{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 54, 59);
+}
+.box {
+    width: 35%;
+    background-color: rgba(221, 240, 227, 0.781);
+    border-radius: 10px;
+}
+
+.box h1 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    font-family: 'Libre Baskerville',cursive;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 25px;
+}
+
+.container div {
+    width: 100%;
+}
+
+.container div label {
+    color: rgba(0, 0,0,0.6);
+    padding-left: 3px;
+}
+
+.container div input, #gender {
+    width: 90%;
+    height: 27px;
+    margin: 5px 0 12px 0;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.574);
+    outline: none;
+    padding: 5px;
+}
+
+::placeholder {
+    padding: 5px;
+    font-family: serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.container div button {
+    margin: 10px 0;
+    width: 90%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466), 10px 10px 10px white ;
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+    font-family: 'Quicksand',cursive;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.container div button:hover {
+    background-color: #afafaf;
+    color: black;
+    transition: all 0.8s;
+}
+
+@media screen and (max-width:1200px) {
+    .container div input, #gender,.container div button {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .container div input, #gender,.container div button {
+        width: 80%;
+    }
+    .box h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box h1 {
+        font-size: 24px;
+    }
+    .container div input, #gender,.container div button {
+        width: 70%;
+    }
+    ::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .box h1 {
+        font-size: 20px;
+    }
+}

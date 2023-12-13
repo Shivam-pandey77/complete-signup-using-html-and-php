@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="signstyle.css">
+</head>
+<body>
+    <form action="http://localhost/internship/full%20working/signup.php" method="post">
+        <div class="full">
+            <div class="box">
+                <h1>Form Validation</h1>
+                <div class="container">
+                    <div>
+                        <label class="name">Full Name</label><br>
+                        <input type="text" placeholder="Enter Your Name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label class="name">Email Address</label><br>
+                        <input type="email" placeholder="Enter Your Email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label class="name">Password</label><br>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                    </div>
+                    
+                    <div>
+                        <label class="name">Date of birth</label><br>
+                        <input type="date" id="date" name="dob" required>
+                    </div>
+                    
+                    <div>
+                        <label class="name">Gender</label><br>
+                        <select id="gender" name="gender">
+                            <option value="#">---</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            <option value="Rather not say">Rather not say</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
